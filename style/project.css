@@ -1,0 +1,265 @@
+/*==========================PROJECT======================*/
+.project {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.06);
+    box-shadow: 0 0 15px rgba(0,0,0,0.06);
+}
+.project .img {
+	display: block;
+	position: relative;
+    overflow: hidden;
+    padding-top: 67%;
+}
+.project .img .effectImg {
+    position: static
+}
+.project .img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.project .caption {    
+    padding: 20px 35px 
+}
+.project .caption .tend {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+.project .caption .des {
+    color: #666666;    
+    margin-bottom: 25px
+}
+.project .caption .des p {
+    padding: 0
+}
+.slideProj .project .caption .tend a {
+    -webkit-line-clamp: 2;
+    max-height: 60px;
+}
+.slideProj .project .caption .des {
+    -webkit-line-clamp: 3;
+    max-height: 75px;
+}
+/*----------LIST PROJECT-------------*/
+.proj-list .item {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.proj-list .project {
+    margin-bottom: 50px;
+}
+.vnt-project .pagination {
+    padding-top: 10px;
+}
+/*----------DETAIL PROJECT-------------*/
+.gal-items {
+    margin-bottom: 50px;
+}
+.gal-items .slick-list{margin: 0 -5px}
+.gal-items .item{padding: 0 5px}
+.gal-items .img {
+    position: relative;
+    overflow: hidden;
+}
+.gal-items .mainImg {
+    margin-bottom: 10px
+}
+.gal-items .mainImg .img {
+    padding-top: 48%;    
+}
+.gal-items .thumnails .img {
+    padding-top: 67%;
+    cursor: pointer;
+    background-color: #000000
+}
+.gal-items .img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.35
+}
+.gal-items .slick-current .img img {
+    opacity: 1
+}
+.gal-items .ds_share ul li a {
+    background-color: #eeeeee;
+}
+.gal-items .mainImg .slick-arrow {
+    top: 50%
+}
+.gal-items .mainImg .slick-prev {
+    left: 30px;    
+}
+.gal-items .mainImg .slick-next {
+    right: 30px;
+}
+.gal-items .mainImg .slick-prev:before {
+    background-image: url(../images/icon/ico-w-arrow-left.svg)
+}
+.gal-items .mainImg .slick-next:before {
+    background-image: url(../images/icon/ico-w-arrow-right.svg);
+}
+.vnt-detail-page .projectAttr {
+    margin-bottom: 60px
+}
+.vnt-detail-page .projectAttr li ~ li {
+    padding-top: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.vnt-detail-page .projectAttr li ~ li {
+    border-top: 1px solid #e5e5e5
+}
+.vnt-detail-page .projectAttr li ~ li:before {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #b1d137
+}
+.vnt-detail-page .projectAttr .txt {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+.boxProjContent .boxTitle {
+    text-align: left;
+    margin-bottom: 20px
+}
+.boxProjContent {
+    margin-bottom: 70px
+}
+.boxProjContent .boxTitle .title {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+    padding-bottom: 20px
+}
+.boxProjContent .boxTitle .title:after {
+    left: 0;
+    margin-left: 0
+}
+.boxProjContent .desc h4 {
+    text-transform: uppercase;
+}
+.boxProjContent .boxContent ~ .boxContent {
+    padding-top: 60px
+}
+/*================================================================*/
+/*=========================RESPONSIVE=============================*/
+/*================================================================*/
+@media all and (min-width: 768px) {
+    .gal-items .thumnails {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+    }
+    .gal-items .thumbs {
+        width: 67%;
+        flex-shrink: 0;
+    }
+}
+@media all and (max-width: 991px) {
+    .project .caption {
+        padding: 12px;
+    }
+	.project .caption .tend {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 10px
+    }      
+    .project .caption .des {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 6px;        
+    }    
+    .vnt-project {
+        padding-top: 15px
+    }
+    .proj-list .row {
+        margin: 0 -5px
+    }
+    .proj-list .item {
+        padding: 0 5px
+    }
+    .proj-list .project {
+	    margin-bottom: 30px;
+	} 	
+    .slideProj .project .caption .tend a {
+        max-height: 48px
+    }
+    .slideProj .project .caption .des {
+        -webkit-line-clamp: 4;
+        max-height: 88px;
+    } 
+    .boxTitle .the-title {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 15px
+    }
+    .gal-items {
+        margin-bottom: 30px;
+    }
+    .gal-items .ds_share {
+        padding-top: 20px;
+        justify-content: flex-end;
+    }
+    .vnt-detail-page .projectAttr {
+        margin-bottom: 40px;
+    }
+    .boxProjContent {
+        margin-bottom: 50px;
+    }
+    .boxProjContent .boxContent ~ .boxContent {
+        padding-top: 40px;
+    }
+	.boxProjContent .boxTitle .title {
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .boxProjContent .boxTitle .title {
+        padding-bottom: 15px
+    }
+}
+@media all and (max-width: 767px) {
+    .vnt-detail-page .projectAttr *[class^='col-']:not(:first-child) li {
+        padding-top: 20px;
+        margin-top: 20px;
+        position: relative;
+        border-top: 1px solid #e5e5e5;
+    }
+    .vnt-detail-page .projectAttr *[class^='col-']:not(:first-child) li:before {
+        position: absolute;
+        left: 0;
+        top: -2px;
+        content: '';
+        width: 40px;
+        height: 2px;
+        background-color: #b1d137;
+    }
+}
+@media all and (max-width: 360px){
+	.proj-list .item {
+        width: 100%
+    }
+}

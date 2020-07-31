@@ -1,0 +1,126 @@
+/*==========================ADVISORY======================*/
+.vnt-advisory .title {
+    padding-left: 15px;
+    padding-right: 15px
+}
+.pad10 {
+    padding-top: 10px
+}
+.boxAdvisory {
+    padding: 50px;
+    background: #f9f9f9;    
+}
+.boxAdvisory .form-advisory {
+    width: 100%;
+    max-width: 490px;
+    margin: auto;
+}
+.boxAdvisory .form-advisory .row {
+    margin: 0 -5px
+}
+.boxAdvisory .form-advisory *[class^=col-] {
+    padding: 0 5px
+}
+.boxAdvisory .form-group {
+    position: relative;
+    margin-bottom: 10px
+}
+.boxAdvisory .form-control {
+    width: 100%;
+    padding-left: 12px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #FFFFFF;
+    border: solid 1px #cccccc;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.boxAdvisory textarea.form-control {
+    height: 110px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 24px;
+}
+.boxAdvisory .form-group.dc .form-control {
+    padding-right: 90px
+}
+.boxAdvisory .form-group:after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: attr(data-cont);
+    color: #555555
+}
+.boxAdvisory .txtAttend {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0
+}
+.boxAdvisory .link .button-w {    
+    padding: 15px 25px;
+    min-width: inherit;
+    width: 100%
+}
+.boxAdvisory.b1 .form-advisory {
+    max-width: 800px
+}
+.form-group .txt {
+    margin-bottom: 10px
+} 
+.boxAdvisory.b1 .bot-form{
+    padding-top: 10px
+}
+/*================================================================*/
+/*=========================RESPONSIVE=============================*/
+/*================================================================*/ 
+@media all and (min-width: 541px) {   
+    .boxAdvisory .bot-form {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+    }
+    .boxAdvisory .bot-form .confirm {
+        width: 304px;
+        flex-shrink: 0;
+        margin-right: 15px
+    }
+}
+@media all and (min-width: 641px) { 
+    .choose-btn  ~ .choose-btn{margin-left:30px}
+}
+@media all and (max-width: 991px) {   
+    .vnt-advisory .title {
+        font-size: 25px!important;
+        line-height: 32px!important;
+        padding-bottom: 20px!important
+    }
+    .boxAdvisory {
+        padding: 30px 20px;
+    }
+}
+@media all and (max-width: 640px){
+    .choose-btn{width:100%}
+    .choose-btn  ~ .choose-btn{margin-top:10px}
+}
+@media all and (max-width: 540px){
+    .boxAdvisory .confirm {
+        margin-bottom: 20px
+    }
+    .boxAdvisory .txtAttend {
+        margin: 20px 0 10px
+    }
+}
+@media all and (max-width: 320px){	
+	.boxAdvisory .form-control::-webkit-input-placeholder { /* Edge */
+      font-size: 13px
+    }
+    .boxAdvisory .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      font-size: 13px
+    }
+    .boxAdvisory .form-control::placeholder {
+      font-size: 13px
+    }
+}

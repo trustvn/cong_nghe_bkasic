@@ -1,0 +1,187 @@
+/*================================INFO CONTACT===========================*/
+.vnt-contact {
+    padding-bottom: 0!important
+}
+.info-contact .nameContact {
+    font-size: 40px;
+    line-height: 50px;
+    color: #879f2a;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.info-contact .addressContact {
+    font-size: 20px;
+    line-height: 27px;  
+    font-weight: 400;  
+}
+.info-contact .link {
+    padding: 30px 0 40px
+}
+.info-contact .link .button-w {
+    min-width: 180px
+}
+.info-contact .link .button-w span:before {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    content: '';
+    width: 18px;
+    height: 20px;
+    background: url(../images/icon/i-address.svg) center center/contain no-repeat;
+    margin-right: 10px;
+}
+.info-contact .link .button-w:hover span:before {
+    background-image: url(../images/icon/w-i-address.svg)
+}
+.info-contact .img {
+    width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 9px;
+    border: 1px solid #dddddd;
+}
+/*=================BEGIN: FORM CONTACT=================*/
+.formWrap {    
+    padding: 70px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.formWrap .wrapper {
+    background-color: rgba(255,255,255,.85);
+    padding: 50px 0 60px
+}
+.formWrap .txt {
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 40px
+}
+.form-contact {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: auto;
+}
+.form-contact .form-group {
+    margin-bottom: 40px;
+}
+.form-contact .flexDesign {
+    margin: 0!important
+}
+.form-contact label {
+    font-weight: 400
+}
+.form-contact .row-input {
+    position: relative;
+}
+.form-contact .form-control {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #666666;    
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    color: #333;    
+}
+.form-contact .row-input:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #b2d237;
+    -moz-transition: width .3s linear;
+    -ms-transition: width .3s linear;
+    -webkit-transition: width .3s linear;
+    -o-transition: width .3s linear;
+    transition: width .3s linear;
+}
+.form-contact .row-input.active:after{width:100%}
+.form-contact textarea.form-control {
+    height: 80px;
+    resize: none;
+    padding-top: 10px;
+}
+.form-contact .link .button-w {
+    padding: 15px 25px;
+    min-width: 170px
+}
+#map-contact iframe {
+    width: 100%!important;
+    height: 450px!important
+}
+/*============================RESPONSIVE==============================*/
+@media all and (min-width: 481px) {
+    .form-contact .flexDesign {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+    }
+    .form-contact .flexDesign .flexLeft {
+        width: 220px;
+        flex-shrink: 0
+    }
+}
+@media all and (max-width: 991px) {
+    .info-contact .nameContact {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 15px
+    }
+    .info-contact .addressContact {
+        font-size: 15px;
+        line-height: 25px;  
+    }
+    .info-contact .addressContact p {
+        padding: 2px 0
+    }
+    .info-contact .link {
+        padding: 20px 0 30px;
+    }
+    .info-contact .img {
+        margin-bottom: 45px
+    }
+    .formWrap {
+        padding: 35px 10px;
+    }
+    .formWrap .wrapper {        
+        padding: 30px 0
+    }
+    .formWrap .txt {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        padding: 0 20px
+    }
+    .form-contact .form-group {
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 480px) {
+    .form-contact .flexDesign, .form-contact .input-group {
+        text-align: center;
+    }
+    .form-contact .flexDesign .flexLeft {
+        margin-bottom: 25px;
+    }
+    .form-contact .input-group {
+        width: 100%
+    }
+}
